@@ -57,13 +57,17 @@ export default function AboutSection() {
             <div
               className={`transition-all duration-700 delay-300 ${isInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
             >
-              <Image
-                src="/placeholder.svg?key=8iu7t"
-                alt="Stavebný tím"
-                width={600}
-                height={700}
-                className="w-full h-auto"
-              />
+              <div className="relative">
+                <Image
+                  src="/images/new.jpg"
+                  alt="Stavebný tím"
+                  width={600}
+                  height={700}
+                  className="w-full h-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <p className="absolute -left-5 -bottom-9 sm:-bottom-12 text-orange-400 p-6 text-4xl sm:text-6xl z-[9999]">Pevné základy</p>
+              </div>
             </div>
           </div>
         </div>

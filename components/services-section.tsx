@@ -86,7 +86,7 @@ export default function ServicesSection() {
         <div className="mt-32 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="relative">
             <Image
-              src="/placeholder.svg?key=jeerx"
+              src="/images/second.jpg"
               alt="Ukážka stavebných služieb"
               width={600}
               height={400}
