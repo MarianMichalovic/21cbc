@@ -4,6 +4,7 @@ import { useRef } from "react"
 import Image from "next/image"
 import { useInView } from "framer-motion"
 import CountUp from "react-countup"
+import { Users, Package, Clock, Globe } from "lucide-react"
 
 export default function AboutSection() {
   const ref = useRef(null)
@@ -31,21 +32,26 @@ export default function AboutSection() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <div>
+              <div className="flex items-center gap-3">
+                <Users className="h-5 w-5 text-orange-600" />
                 <p className="text-gray-900 font-medium">Profesionálny tím</p>
               </div>
-              <div>
+              <div className="flex items-center gap-3">
+                <Package className="h-5 w-5 text-orange-600" />
                 <p className="text-gray-900 font-medium">Kvalitné materiály</p>
               </div>
-              <div>
+              <div className="flex items-center gap-3">
+                <Clock className="h-5 w-5 text-orange-600" />
                 <p className="text-gray-900 font-medium">Včasné dokončenie</p>
               </div>
-              <div>
+              <div className="flex items-center gap-3">
+                <Globe className="h-5 w-5 text-orange-600" />
                 <p className="text-gray-900 font-medium">Celoeurópske pôsobenie</p>
               </div>
             </div>
 
-            <div className="flex items-center space-x-6">
+            <div className="flex flex flex-col space-x-6">
+              <img src="/images/signature.png" alt="podpis_ceo" className="w-48 sm:w-80" />
               <div>
                 <p className="font-medium text-gray-900">Tomáš Wagner</p>
                 <p className="text-sm text-gray-500">Generálny riaditeľ & Zakladateľ</p>

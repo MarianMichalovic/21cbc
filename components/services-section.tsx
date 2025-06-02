@@ -67,12 +67,12 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`group cursor-pointer transition-all duration-700 ${
+              className={`group cursor-pointer transition-all duration-700 border border-gray-200 rounded-lg hover:border-orange-200 ${
                 isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="text-center py-12">
+              <div className="text-center py-12 px-6">
                 <div className="inline-flex items-center justify-center w-16 h-16 mb-8 transition-transform duration-300 group-hover:scale-110">
                   <service.icon className="h-8 w-8 text-gray-400 group-hover:text-orange-600 transition-colors duration-300" />
                 </div>

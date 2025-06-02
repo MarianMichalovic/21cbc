@@ -144,7 +144,7 @@ export default function ReviewsSection() {
   ]
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="inline-block rounded-lg bg-orange-100 px-3 py-1 text-sm text-orange-600 mb-4">

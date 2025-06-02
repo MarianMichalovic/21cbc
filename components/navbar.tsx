@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center focus:outline-none">
             <div className={cn("sm:text-3xl text-2xl transition-colors", isScrolled ? "text-orange-500" : "text-white")}>
               21<span className="text-black font-bold sm:text-3xl text-2xl">CBC</span> <span>s.r.o.</span>
             </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
             <Link
               href="/"
               className={cn(
-                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600",
+                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600 focus:outline-none",
                 isScrolled ? "text-gray-900" : "text-white",
               )}
             >
@@ -53,7 +53,7 @@ export default function Navbar() {
             <Link
               href="/#about"
               className={cn(
-                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600",
+                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600 focus:outline-none",
                 isScrolled ? "text-gray-900" : "text-white",
               )}
             >
@@ -62,7 +62,7 @@ export default function Navbar() {
             <Link
               href="/#services"
               className={cn(
-                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600",
+                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600 focus:outline-none",
                 isScrolled ? "text-gray-900" : "text-white",
               )}
             >
@@ -71,7 +71,7 @@ export default function Navbar() {
             <Link
               href="/#projects"
               className={cn(
-                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600",
+                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600 focus:outline-none",
                 isScrolled ? "text-gray-900" : "text-white",
               )}
             >
@@ -80,7 +80,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               className={cn(
-                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600",
+                "text-sm font-medium tracking-wider uppercase transition-colors hover:text-orange-600 focus:outline-none",
                 isScrolled ? "text-gray-900" : "text-white",
               )}
             >

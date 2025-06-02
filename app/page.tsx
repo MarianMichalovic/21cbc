@@ -7,6 +7,7 @@ import ServicesSection from "@/components/services-section"
 import ProjectsSection from "@/components/projects-section"
 import AboutSection from "@/components/about-section"
 import Footer from "@/components/footer"
+import Gallery from "@/components/gallery"
 
 export default function Home() {
   return (
@@ -56,63 +57,24 @@ export default function Home() {
       {/* Services Section */}
       <ServicesSection />
 
-      {/* European Presence Section */}
-      <section className="py-32 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
-            <p className="text-orange-600 text-sm font-medium tracking-wider uppercase mb-4">Európa</p>
-            <h2 className="text-4xl md:text-5xl font-light mb-6 text-gray-900">Naša prítomnosť</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
-              Pôsobíme v mnohých krajinách po celej Európe, kde sme úspešne dokončili stovky projektov.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="text-center py-8">
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Nemecko</h3>
-              <p className="text-gray-500 mb-4">38 projektov</p>
-              <p className="text-sm text-gray-400">Berlín, Mníchov, Hamburg</p>
-            </div>
-
-            <div className="text-center py-8">
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Rakúsko</h3>
-              <p className="text-gray-500 mb-4">42 projektov</p>
-              <p className="text-sm text-gray-400">Viedeň, Salzburg, Graz</p>
-            </div>
-
-            <div className="text-center py-8">
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Francúzsko</h3>
-              <p className="text-gray-500 mb-4">27 projektov</p>
-              <p className="text-sm text-gray-400">Paríž, Lyon, Marseille</p>
-            </div>
-
-            <div className="text-center py-8">
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Taliansko</h3>
-              <p className="text-gray-500 mb-4">31 projektov</p>
-              <p className="text-sm text-gray-400">Rím, Miláno, Benátky</p>
-            </div>
-
-            <div className="text-center py-8">
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Španielsko</h3>
-              <p className="text-gray-500 mb-4">19 projektov</p>
-              <p className="text-sm text-gray-400">Madrid, Barcelona</p>
-            </div>
-
-            <div className="text-center py-8">
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Česká republika</h3>
-              <p className="text-gray-500 mb-4">12 projektov</p>
-              <p className="text-sm text-gray-400">Praha, Brno, Ostrava</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Projects Section */}
       <ProjectsSection />
 
+      <Gallery />
+
       {/* CTA Section */}
-      <section className="py-32 bg-gray-900">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-32 bg-gray-900 relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero-background.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/70" />
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-light text-white mb-8">Pripravení začať?</h2>
           <p className="text-white/70 text-lg mb-12 max-w-xl mx-auto">
             Kontaktujte nás ešte dnes pre bezplatnú konzultáciu a cenovú ponuku
@@ -124,7 +86,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
       <Footer />
     </div>
   )
