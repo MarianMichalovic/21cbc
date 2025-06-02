@@ -31,13 +31,13 @@ export default function Home() {
           <div className="max-w-4xl">
             <p className="text-orange-600 text-sm font-medium tracking-wider uppercase mb-6">Európska excelentnosť</p>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-8 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white mb-8 leading-tight">
               Kvalitná výstavba
               <br />
               <span className="text-white/70">& Poctivé služby</span>
             </h1>
 
-            <p className="text-white/80 text-xl mb-12 max-w-2xl leading-relaxed">
+            <p className="text-white text-xl mb-12 max-w-2xl leading-relaxed">
               Vytvárame mimoriadne priestory s viac ako 7-ročnými skúsenosťami po celej Európe.
             </p>
 

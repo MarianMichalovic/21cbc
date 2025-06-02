@@ -8,7 +8,7 @@ import { Users, Package, Clock, Globe } from "lucide-react"
 
 export default function AboutSection() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const isInView = useInView(ref, { once: true, amount: 0.1 })
 
   const stats = [
     { value: 150, label: "Dokončených projektov", suffix: "+" },

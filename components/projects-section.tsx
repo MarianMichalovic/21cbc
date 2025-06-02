@@ -163,7 +163,7 @@ export default function ReviewsSection() {
           onMouseLeave={handleMouseLeave}
         >
           {/* Reviews slider */}
-          <div className="overflow-hidden py-8">
+          <div className="overflow-hidden">
             <div className="relative h-[400px] md:h-[350px]">
               {visibleReviews.map((review, index) => {
                 // Position: 0 = previous, 1 = current, 2 = next
@@ -198,7 +198,7 @@ export default function ReviewsSection() {
                           />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold">{review.name}</h3>
+                          <h3 className="text-xl font-bold text-gray-900">{review.name}</h3>
                           <p className="text-gray-600 text-sm">{review.position}</p>
                           <div className="flex mt-1">
                             {[...Array(5)].map((_, i) => (
@@ -227,32 +227,34 @@ export default function ReviewsSection() {
           </div>
 
           {/* Navigation buttons */}
-          <button
-            onClick={() => {
-              prevReview()
-              setIsAutoplay(false)
-              setTimeout(() => setIsAutoplay(true), 10000)
-            }}
-            className="absolute left-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg z-20 hover:bg-gray-100 transition-colors"
-            aria-label="Predchádzajúca recenzia"
-          >
-            <ChevronLeft className="h-6 w-6 text-gray-600" />
-          </button>
+          <div className="flex justify-center items-center gap-12 mt-4 md:mt-0 md:absolute md:inset-x-0 md:top-1/2 md:-translate-y-1/2">
+            <button
+              onClick={() => {
+                prevReview()
+                setIsAutoplay(false)
+                setTimeout(() => setIsAutoplay(true), 10000)
+              }}
+              className="bg-white rounded-full p-2 shadow-lg z-20 hover:bg-gray-100 transition-colors md:absolute md:left-0"
+              aria-label="Predchádzajúca recenzia"
+            >
+              <ChevronLeft className="h-6 w-6 text-gray-600" />
+            </button>
 
-          <button
-            onClick={() => {
-              nextReview()
-              setIsAutoplay(false)
-              setTimeout(() => setIsAutoplay(true), 10000)
-            }}
-            className="absolute right-0 top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg z-20 hover:bg-gray-100 transition-colors"
-            aria-label="Nasledujúca recenzia"
-          >
-            <ChevronRight className="h-6 w-6 text-gray-600" />
-          </button>
+            <button
+              onClick={() => {
+                nextReview()
+                setIsAutoplay(false)
+                setTimeout(() => setIsAutoplay(true), 10000)
+              }}
+              className="bg-white rounded-full p-2 shadow-lg z-20 hover:bg-gray-100 transition-colors md:absolute md:right-0"
+              aria-label="Nasledujúca recenzia"
+            >
+              <ChevronRight className="h-6 w-6 text-gray-600" />
+            </button>
+          </div>
 
           {/* Dots navigation */}
-          <div className="flex justify-center mt-8 space-x-2">
+          <div className="flex justify-center mt-4 space-x-2">
             {reviews.map((_, index) => (
               <button
                 key={index}
