@@ -55,16 +55,33 @@ export default function ContactPage() {
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-orange-600 mt-1 mr-6" />
                   <div>
-                    <h3 className="font-medium text-lg mb-2 text-gray-900">Hlavná kancelária</h3>
-                    <p className="text-gray-500">123 Stavebná ulica, Viedeň, Rakúsko</p>
+                    <h3 className="font-medium text-lg mb-2 text-gray-900">Kancelária BC Luxe</h3>
+                    <p className="text-gray-500">Bárdošova 2/A, 831 01 Bratislava (parkovanie v Areali)</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <MapPin className="h-6 w-6 text-orange-600 mt-1 mr-6" />
+                  <div>
+                    <h3 className="font-medium text-lg mb-2 text-gray-900">Sídlo spoločnosti</h3>
+                    <p className="text-gray-500">21CBC s.r.o. Maloboršanská ulica 390/9, Hrubá Borša 900 50</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <Phone className="h-6 w-6 text-orange-600 mt-1 mr-6" />
                   <div>
-                    <h3 className="font-medium text-lg mb-2 text-gray-900">Telefón</h3>
-                    <p className="text-gray-500">+43 123 456 7890</p>
+                    <h3 className="font-medium text-lg mb-2 text-gray-900">Kontaktné osoby</h3>
+                    <div className="space-y-3">
+                      <div>
+                        <p className="text-gray-900 font-medium">Ondrej Vadel - stavebníctvo</p>
+                        <p className="text-gray-500">0918 093 338</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-900 font-medium">Richard Chovanec - stavebníctvo a elektroinštalácie</p>
+                        <p className="text-gray-500">0911 766 296</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -72,7 +89,10 @@ export default function ContactPage() {
                   <Mail className="h-6 w-6 text-orange-600 mt-1 mr-6" />
                   <div>
                     <h3 className="font-medium text-lg mb-2 text-gray-900">Email</h3>
-                    <p className="text-gray-500">info@eurokonstrukt.com</p>
+                    <div className="space-y-1">
+                      <p className="text-gray-500">vadel21cbc@gmail.com</p>
+                      <p className="text-gray-500">chovanec21cbc@gmail.com</p>
+                    </div>
                   </div>
                 </div>
 
@@ -80,8 +100,7 @@ export default function ContactPage() {
                   <Clock className="h-6 w-6 text-orange-600 mt-1 mr-6" />
                   <div>
                     <h3 className="font-medium text-lg mb-2 text-gray-900">Pracovná doba</h3>
-                    <p className="text-gray-500">Pondelok - Piatok: 8:00 - 18:00</p>
-                    <p className="text-gray-500">Sobota: 9:00 - 13:00</p>
+                    <p className="text-gray-500">Pondelok - Piatok: 8:00 - 16:30</p>
                   </div>
                 </div>
               </div>

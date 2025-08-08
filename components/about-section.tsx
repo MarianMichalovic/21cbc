@@ -4,7 +4,7 @@ import { useRef } from "react"
 import Image from "next/image"
 import { useInView } from "framer-motion"
 import CountUp from "react-countup"
-import { Users, Package, Clock, Globe } from "lucide-react"
+import { Users, Package, Clock, Wrench } from "lucide-react"
 
 export default function AboutSection() {
   const ref = useRef(null)
@@ -27,8 +27,11 @@ export default function AboutSection() {
             <p className="text-orange-600 text-sm font-medium tracking-wider uppercase mb-4">O nás</p>
             <h2 className="text-4xl md:text-5xl font-light mb-8 text-gray-900">Staviame budúcnosť</h2>
             <p className="text-gray-500 mb-12 text-lg leading-relaxed">
-              S viac ako 7-ročnými skúsenosťami náš tím kvalifikovaných odborníkov poskytuje výnimočné služby v oblasti
-              výstavby po celej Európe. Sme hrdí na kvalitu našej práce a záväzok k spokojnosti klientov.
+              S viac ako 17-ročnými skúsenosťami náš tím kvalifikovaných odborníkov poskytuje výnimočné služby v oblasti výstavby po celej Európe. Sme hrdí na kvalitu našej práce a záväzok k spokojnosti klientov.
+            </p>
+
+            <p className="text-gray-500 mb-12 text-lg leading-relaxed">
+              Sme presvedčení o kvalite našich služieb a preto poskytujeme 5-ročnú záruku na naše projekty.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -44,17 +47,20 @@ export default function AboutSection() {
                 <Clock className="h-5 w-5 text-orange-600" />
                 <p className="text-gray-900 font-medium">Včasné dokončenie</p>
               </div>
-              <div className="flex items-center gap-3">
-                <Globe className="h-5 w-5 text-orange-600" />
-                <p className="text-gray-900 font-medium">Celoeurópske pôsobenie</p>
-              </div>
+                <div className="flex items-center gap-3">
+                <Wrench className="h-5 w-5 text-orange-600" />
+                <p className="text-gray-900 font-medium">Moderné technológie</p>
+                </div>
             </div>
 
-            <div className="flex flex flex-col space-x-6">
-              <img src="/images/signature.png" alt="podpis_ceo" className="w-48 sm:w-80" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <p className="font-medium text-gray-900">Tomáš Wagner</p>
-                <p className="text-sm text-gray-500">Generálny riaditeľ & Zakladateľ</p>
+                <p className="font-medium text-gray-900">Ondrej Vadel</p>
+                <p className="text-sm text-gray-500">Konatel & Zakladateľ<br />odborník pre stavebníctvo</p>
+              </div>
+              <div>
+                <p className="font-medium text-gray-900">Richard Chovanec</p>
+                <p className="text-sm text-gray-500">Konatel & Zakladateľ<br />odborník pre elektroinštalácie</p>
               </div>
             </div>
           </div>

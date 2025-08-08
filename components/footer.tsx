@@ -1,7 +1,15 @@
+"use client"
+
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { MapPin, Phone, Mail } from "lucide-react"
 
 export default function Footer() {
+  const [currentYear, setCurrentYear] = useState(2024)
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear())
+  }, [])
   return (
     <footer className="bg-white/90 border-t border-gray-100">
       <div className="container mx-auto px-4 py-20">
@@ -9,7 +17,7 @@ export default function Footer() {
           <div>
             <div className="text-gray-900 text-2xl font-light mb-8">21CBC s.r.o.</div>
             <p className="text-gray-500 mb-8 leading-relaxed">
-              Profesionálne služby v oblasti výstavby po celej Európe. Garantujeme kvalitné remeselné spracovanie a
+              Profesionálne služby v oblasti výstavby. Garantujeme kvalitné remeselné spracovanie a
               spokojnosť zákazníkov.
             </p>
           </div>
@@ -71,15 +79,24 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-orange-600 mt-0.5 mr-3" />
-                <span className="text-gray-500">123 Stavebná ulica, Viedeň, Rakúsko</span>
+                <div className="text-gray-500">
+                  <div>Kancelária BC Luxe</div>
+                  <div>Bárdošova 2/A, 831 01 Bratislava</div>
+                </div>
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-orange-600 mt-0.5 mr-3" />
-                <span className="text-gray-500">+43 123 456 7890</span>
+                <div className="text-gray-500">
+                  <div>0918 093 338 (Ondrej Vadel)</div>
+                  <div>0911 766 296 (Richard Chovanec)</div>
+                </div>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-orange-600 mt-0.5 mr-3" />
-                <span className="text-gray-500">info@21cbc.com</span>
+                <div className="text-gray-500">
+                  <div>vadel21cbc@gmail.com</div>
+                  <div>chovanec21cbc@gmail.com</div>
+                </div>
               </li>
             </ul>
           </div>
@@ -90,10 +107,10 @@ export default function Footer() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} 21CBC s.r.o. Všetky práva vyhradené.
+              &copy; {currentYear} 21CBC s.r.o. Všetky práva vyhradené.
             </p>
             <div className="mt-4 md:mt-0">
-              <ul className="flex space-x-8">
+              {/* <ul className="flex space-x-8">
                 <li>
                   <Link href="#" className="text-gray-400 text-sm hover:text-orange-600 transition-colors">
                     Ochrana údajov
@@ -104,7 +121,7 @@ export default function Footer() {
                     Podmienky
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

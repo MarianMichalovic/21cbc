@@ -4,47 +4,48 @@ import { useRef } from "react"
 import Image from "next/image"
 import { useInView } from "framer-motion"
 import { Hammer, Building2, Shovel, ToyBrickIcon as Bricks, Wind, Truck, Wrench, PaintBucket } from "lucide-react"
+import { Home, HardHat, ThermometerSun, Palette, SquareStack, Droplets, Zap, BrickWall } from "lucide-react"
 
 const services = [
   {
-    title: "Demolácia",
-    description: "Profesionálne a bezpečné demolačné služby pre obytné, komerčné a priemyselné objekty.",
-    icon: Hammer,
+    title: "Stavby na klúč",
+    description: "Kompletná realizácia stavby od projektu až po odovzdanie vrátane všetkých dokončovacích prác.",
+    icon: Home,
   },
   {
-    title: "Výstavba",
-    description: "Kompletné stavebné služby od základov až po dokončovacie práce s kvalitným remeselným spracovaním.",
-    icon: Building2,
+    title: "Stavby do štádia Holodom",
+    description: "Realizácia stavby s kompletne dokončenými vnútornými rozvodmi a priečkami pripravená na dokončenie.",
+    icon: HardHat,
   },
   {
-    title: "Výkopové práce",
-    description: "Presné výkopové práce pre základy, inžinierske siete a prípravu staveniska po celej Európe.",
-    icon: Shovel,
+    title: "Stavby do štádia Hrubá stavba",
+    description: "Výstavba nosných konštrukcií, základov, stien a strechy s dokončenou hrubou stavbou.",
+    icon: BrickWall,
   },
   {
-    title: "Murárske práce",
-    description: "Odborné murárske služby vrátane tehlových, kamenných a betónových prác s tradičnými technikami.",
-    icon: Bricks,
+    title: "Zateplenie a fasády",
+    description: "Profesionálne zatepľovacie systémy a fasádne práce pre energetickú efektívnosť budov.",
+    icon: ThermometerSun,
   },
   {
-    title: "Klimatizácia",
-    description: "Inštalácia a údržba HVAC systémov pre optimálnu klimatizáciu v akejkoľvek budove.",
-    icon: Wind,
+    title: "Omietky",
+    description: "Kvalitné vnútorné a vonkajšie omietky s použitím moderných materiálov a techník.",
+    icon: Palette,
   },
   {
-    title: "Preprava materiálu",
-    description: "Efektívna preprava stavebných materiálov na a z vášho staveniska.",
-    icon: Truck,
+    title: "Potery",
+    description: "Presné vyhotovenie podkladových a finálnych poterov pre všetky typy podláh.",
+    icon: SquareStack,
   },
   {
-    title: "Inštalatérske práce",
-    description: "Kompletné inštalatérske riešenia pre novú výstavbu a rekonštrukčné projekty.",
-    icon: Wrench,
+    title: "Zdravotechnika",
+    description: "Kompletné inštalácie vody, kúrenia a kanalizácie s moderným technickým vybavením.",
+    icon: Droplets,
   },
   {
-    title: "Maľovanie a dokončovanie",
-    description: "Profesionálne maliarske a dokončovacie služby na dokončenie vášho stavebného projektu.",
-    icon: PaintBucket,
+    title: "Elektroinštalácie a Bleskozvody",
+    description: "Odborné elektrické inštalácie a bleskozvody v súlade s najnovšími bezpečnostnými normami.",
+    icon: Zap,
   },
 ]
 
@@ -94,29 +95,44 @@ export default function ServicesSection() {
             />
           </div>
 
-          <div>
-            <p className="text-orange-600 text-sm font-medium tracking-wider uppercase mb-4">Prečo my</p>
-            <h2 className="text-3xl font-light mb-8 text-gray-900">Európska excelentnosť</h2>
+            <div>
+            <h2 className="text-3xl font-light mb-8 text-gray-900">Prečo my</h2>
             <p className="text-gray-500 mb-12 text-lg leading-relaxed">
-              S viac ako 7-ročnými skúsenosťami v mnohých európskych krajinách prinášame do každého projektu
+              S viac ako 17-ročnými skúsenosťami prinášame do každého projektu
               neprekonateľné odborné znalosti.
             </p>
 
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-medium text-lg mb-2 text-gray-900">Skúsený tím</h3>
-                <p className="text-gray-500">Kvalifikovaní odborníci s dlhoročnými skúsenosťami</p>
+            <div className="space-y-4">
+              <div className="flex items-center">
+              <div className="w-2 h-2 bg-orange-600 rounded-full mr-4"></div>
+              <span className="text-gray-700">Dlhoročné skúsenosti</span>
               </div>
-              <div>
-                <h3 className="font-medium text-lg mb-2 text-gray-900">Kvalitné materiály</h3>
-                <p className="text-gray-500">Používame len najkvalitnejšie materiály pre dlhú životnosť</p>
+              <div className="flex items-center">
+              <div className="w-2 h-2 bg-orange-600 rounded-full mr-4"></div>
+              <span className="text-gray-700">Moderné technológie</span>
               </div>
-              <div>
-                <h3 className="font-medium text-lg mb-2 text-gray-900">Včasné dodanie</h3>
-                <p className="text-gray-500">Dokončujeme projekty podľa harmonogramu a v rámci rozpočtu</p>
+              <div className="flex items-center">
+              <div className="w-2 h-2 bg-orange-600 rounded-full mr-4"></div>
+              <span className="text-gray-700">Spoľahlivosť</span>
+              </div>
+              <div className="flex items-center">
+              <div className="w-2 h-2 bg-orange-600 rounded-full mr-4"></div>
+              <span className="text-gray-700">Vysoká kvalita</span>
+              </div>
+              <div className="flex items-center">
+              <div className="w-2 h-2 bg-orange-600 rounded-full mr-4"></div>
+              <span className="text-gray-700">Férová cena</span>
+              </div>
+              <div className="flex items-center">
+              <div className="w-2 h-2 bg-orange-600 rounded-full mr-4"></div>
+              <span className="text-gray-700">Rýchle riešenia</span>
+              </div>
+              <div className="flex items-center">
+              <div className="w-2 h-2 bg-orange-600 rounded-full mr-4"></div>
+              <span className="text-gray-700">5 ročná záruka</span>
               </div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </section>

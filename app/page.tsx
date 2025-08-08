@@ -29,16 +29,16 @@ export default function Home() {
 
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl">
-            <p className="text-orange-600 text-sm font-medium tracking-wider uppercase mb-6">Európska excelentnosť</p>
+            <p className="text-orange-600 text-sm font-medium tracking-wider uppercase mb-6">Stavebá spoločnosť 21. storočia</p>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white mb-8 leading-tight">
               Kvalitná výstavba
               <br />
-              <span className="text-white/70">& Poctivé služby</span>
+              <span className="text-white/70">a moderné technológie</span>
             </h1>
 
             <p className="text-white text-xl mb-12 max-w-2xl leading-relaxed">
-              Vytvárame mimoriadne priestory s viac ako 7-ročnými skúsenosťami po celej Európe.
+              Staviame na viac ako 17 ročných skúsenostiach v stavebníctve a 13 ročných skúsenostiach v elektroinštaláciach z mnohých úspešných projektoch.
             </p>
 
             <Link href="/#about">
