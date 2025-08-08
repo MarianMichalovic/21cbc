@@ -78,7 +78,7 @@ export default function AboutSection() {
                   className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                <p className="absolute -left-5 -bottom-9 sm:-bottom-12 text-orange-400 p-6 text-4xl sm:text-6xl z-[9999]">Pevné základy</p>
+                  {/* <p className="absolute -left-5 -bottom-14 sm:-bottom-28 text-orange-400 p-6 text-3xl sm:text-4xl z-[9999]">Pevné základy</p> */}
               </div>
             </div>
           </div>

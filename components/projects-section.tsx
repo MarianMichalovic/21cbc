@@ -150,7 +150,7 @@ export default function ReviewsSection() {
           <div className="inline-block rounded-lg bg-orange-100 px-3 py-1 text-sm text-orange-600 mb-4">
             REFERENCIE KLIENTOV
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Čo o nás hovoria naši klienti</h2>
+          <h2 className="text-3xl md:text-4xl font-light mb-4">Čo o nás hovoria naši klienti</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Prečítajte si, čo hovoria naši spokojní klienti o našich službách a projektoch po celej Európe.
           </p>
