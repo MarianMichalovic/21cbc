@@ -13,7 +13,7 @@ export default function AboutSection() {
   const stats = [
     { value: 150, label: "Dokončených projektov", suffix: "+" },
     { value: 17, label: "Rokov skúseností", suffix: "+" },
-    { value: 12, label: "Krajín pôsobenia", suffix: "" },
+    // { value: 12, label: "Krajín pôsobenia", suffix: "" },
     { value: 98, label: "Spokojnosť klientov", suffix: "%" },
   ]
 
@@ -84,7 +84,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div
               key={stat.label}
