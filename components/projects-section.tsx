@@ -14,7 +14,7 @@ const reviews = [
     position: "Generálny riaditeľ, NovaBuild s.r.o.",
     image: "/placeholder.svg?key=review1",
     rating: 5,
-    text: "Spolupráca s EuroKonstrukt bola vynikajúca. Ich tím dokončil náš komerčný projekt načas a v rámci rozpočtu. Profesionalita a kvalita ich práce je bezkonkurenčná.",
+    text: "Spolupráca bola vynikajúca. 21CBC tím dokončil náš komerčný projekt načas a v rámci rozpočtu. Profesionalita a kvalita ich práce je bezkonkurenčná.",
     location: "Praha, Česká republika",
   },
   {
@@ -32,7 +32,7 @@ const reviews = [
     position: "Projektový manažér, GermanTech GmbH",
     image: "/placeholder.svg?key=review3",
     rating: 5,
-    text: "Najali sme EuroKonstrukt na výstavbu našej novej výrobnej haly. Ich odborné znalosti v priemyselných stavbách boli zrejmé od začiatku projektu až po jeho dokončenie.",
+    text: "Najali sme 21CBC na výstavbu našej novej výrobnej haly. Ich odborné znalosti v priemyselných stavbách boli zrejmé od začiatku projektu až po jeho dokončenie.",
     location: "Berlín, Nemecko",
   },
   {
@@ -50,7 +50,7 @@ const reviews = [
     position: "Vlastník, Ristorante Bella Vista",
     image: "/placeholder.svg?key=review5",
     rating: 5,
-    text: "Rekonštrukcia našej historickej budovy bola vykonaná s rešpektom k pôvodnej architektúre. Tím EuroKonstrukt preukázal výnimočné zručnosti pri zachovaní historických prvkov.",
+    text: "Rekonštrukcia našej historickej budovy bola vykonaná s rešpektom k pôvodnej architektúre. Tím 21CBC preukázal výnimočné zručnosti pri zachovaní historických prvkov.",
     location: "Miláno, Taliansko",
   },
   {
@@ -59,7 +59,7 @@ const reviews = [
     position: "Investorka, Modern Living Sp. z o.o.",
     image: "/placeholder.svg?key=review6",
     rating: 5,
-    text: "Náš rezidenčný projekt bol dokončený v rekordnom čase bez kompromisov v kvalite. Profesionalita a komunikácia tímu EuroKonstrukt bola na najvyššej úrovni.",
+    text: "Náš rezidenčný projekt bol dokončený v rekordnom čase bez kompromisov v kvalite. Profesionalita a komunikácia tímu 21CBC bola na najvyššej úrovni.",
     location: "Varšava, Poľsko",
   },
   {
@@ -68,7 +68,7 @@ const reviews = [
     position: "Architekt, Diseño Moderno",
     image: "/placeholder.svg?key=review7",
     rating: 4,
-    text: "Ako architekt oceňujem precíznosť, s akou EuroKonstrukt realizoval moje návrhy. Ich technické znalosti a schopnosť riešiť komplexné konštrukčné výzvy sú pozoruhodné.",
+    text: "Ako architekt oceňujem precíznosť, s akou 21CBC realizoval moje návrhy. Ich technické znalosti a schopnosť riešiť komplexné konštrukčné výzvy sú pozoruhodné.",
     location: "Madrid, Španielsko",
   },
   {
@@ -86,7 +86,7 @@ const reviews = [
     position: "Riaditeľ, Alpine Resort & Spa",
     image: "/placeholder.svg?key=review9",
     rating: 5,
-    text: "Rozšírenie nášho horského rezortu bolo náročným projektom vzhľadom na terén a klimatické podmienky. EuroKonstrukt zvládol všetky výzvy s profesionalitou a odbornosťou.",
+    text: "Rozšírenie nášho horského rezortu bolo náročným projektom vzhľadom na terén a klimatické podmienky. 21CBC zvládol všetky výzvy s profesionalitou a odbornosťou.",
     location: "Zürich, Švajčiarsko",
   },
   {
@@ -95,7 +95,7 @@ const reviews = [
     position: "Developerka, Urban Solutions s.r.o.",
     image: "/placeholder.svg?key=review10",
     rating: 5,
-    text: "Spolupráca s EuroKonstrukt na našom mixed-use projekte bola bezproblémová. Ich schopnosť koordinovať rôzne aspekty výstavby a dodržiavať termíny je obdivuhodná.",
+    text: "Spolupráca s 21CBC na našom mixed-use projekte bola bezproblémová. Ich schopnosť koordinovať rôzne aspekty výstavby a dodržiavať termíny je obdivuhodná.",
     location: "Bratislava, Slovensko",
   },
 ]
@@ -152,7 +152,7 @@ export default function ReviewsSection() {
           </div>
           <h2 className="text-3xl md:text-4xl font-light mb-4">Čo o nás hovoria naši klienti</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Prečítajte si, čo hovoria naši spokojní klienti o našich službách a projektoch po celej Európe.
+            Prečítajte si, čo hovoria naši spokojní klienti o našich službách a projektoch.
           </p>
         </div>
 
@@ -216,9 +216,9 @@ export default function ReviewsSection() {
 
                       <p className="text-gray-700 flex-grow mb-4 italic">"{review.text}"</p>
 
-                      <div className="mt-auto">
+                      {/* <div className="mt-auto">
                         <p className="text-sm text-gray-500">{review.location}</p>
-                      </div>
+                      </div> */}
                     </div>
                   </motion.div>
                 )

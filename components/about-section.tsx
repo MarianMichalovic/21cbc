@@ -27,7 +27,7 @@ export default function AboutSection() {
             <p className="text-orange-600 text-sm font-medium tracking-wider uppercase mb-4">O nás</p>
             <h2 className="text-4xl md:text-5xl font-light mb-8 text-gray-900">Staviame budúcnosť</h2>
             <p className="text-gray-500 mb-12 text-lg leading-relaxed">
-              S viac ako 17-ročnými skúsenosťami náš tím kvalifikovaných odborníkov poskytuje výnimočné služby v oblasti výstavby po celej Európe. Sme hrdí na kvalitu našej práce a záväzok k spokojnosti klientov.
+              S viac ako 17-ročnými skúsenosťami náš tím kvalifikovaných odborníkov poskytuje výnimočné služby v oblasti výstavby. Sme hrdí na kvalitu našej práce a záväzok k spokojnosti klientov.
             </p>
 
             <p className="text-gray-500 mb-12 text-lg leading-relaxed">

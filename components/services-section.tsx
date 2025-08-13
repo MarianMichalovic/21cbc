@@ -60,7 +60,7 @@ export default function ServicesSection() {
           <p className="text-orange-600 text-sm font-medium tracking-wider uppercase mb-4">Služby</p>
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-gray-900">Komplexné riešenia</h2>
           <p className="text-gray-500 max-w-xl mx-auto text-lg leading-relaxed">
-            Poskytujeme širokú škálu stavebných služieb po celej Európe s dôrazom na kvalitu a precíznosť.
+            Poskytujeme širokú škálu stavebných služieb s dôrazom na kvalitu a precíznosť.
           </p>
         </div>
 
