@@ -12,7 +12,7 @@ export default function AboutSection() {
 
   const stats = [
     { value: 150, label: "Dokončených projektov", suffix: "+" },
-    { value: 7, label: "Rokov skúseností", suffix: "+" },
+    { value: 17, label: "Rokov skúseností", suffix: "+" },
     { value: 12, label: "Krajín pôsobenia", suffix: "" },
     { value: 98, label: "Spokojnosť klientov", suffix: "%" },
   ]
